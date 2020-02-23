@@ -4,59 +4,138 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Singolo1</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="container">
     <header class="header">
       <div class="wrapper">
+      <div class="header__wrapper">
         <h1 class="singolo">SINGOLO<span style="color:#f06c64;">*</span></h1>
-        <!-- <a href="#" class="logo">SINGOLO*</a> -->
         <nav class="header__navigation">
-          <ul >
-            <li><a href='#' class="navigation__link">HOME</a></li>
-            <li><a href='#' class="navigation__link">SERVICES</a></li>
-            <li><a href='#' class="navigation__link">PORTFOLIO</a></li>
-            <li><a href='#' class="navigation__link">ABOUT</a></li>
-            <li><a href='#' class="navigation__link">CONTACT</a></li>
+          <ul>
+            <li><a href="#" class="navigation__link">HOME</a></li>
+            <li><a href="#" class="navigation__link">SERVICES</a></li>
+            <li><a href="#" class="navigation__link">PORTFOLIO</a></li>
+            <li><a href="#" class="navigation__link">ABOUT</a></li>
+            <li><a href="#" class="navigation__link">CONTACT</a></li>
           </ul>
         </nav>
       </div>
-      <div class="header header__bottom"></div>
+      </div>
+      <!-- <div class=" header__bottom"></div> -->
     </header>
+    <div class=" header__bottom"></div>
 
     <main class="slider">
-      <div class="wrapper">
-        <div class="chev chev_left"></div>
-        <div class="chev chev_right"></div>
-        <div class="iPhone-Horizontal"></div>
+      
+        <a href="#"><div class="chev_left"></div></a>
         <div class="iPone-Vertical"></div>
-      </div>
-      <div class="slider slider__bottom"></div>
+        <div class="iPhone-Horizontal"></div>
+        <a href="#"><div class="chev_right"></div></a>
     </main>
+    <div class="slider__bottom"></div>
 
     <section class="services">
-        <div class="wrapper">
-            <h2 class="our-services"></h2>
-            <p class="text text_our-services">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
-                 Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-                  Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
-                </p>
-                <div class="layout-3-column">
-                    <div class="tools">
-                        <div class="tool__icon">
-                            <div class="icon-ellipse icon-ellipse_pen"></div>
-                        </div>
-                        <h3>Custom Design</h3>
-                        <p>
-                            Curabitur vestibulum eget mauris quis laoreet.
-                            Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
-                        </p>
-                    </div>
+      <div class="wrapper">
+        <h2 class="our-services">Our Services</h2>
+        <p class="text_our-services">
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+          Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+          tortor mauris condimentum nibh.
+        </p>
+        <div class="services__inner">
+          <div class="services__item">
+          <img class="services__image" src="assets/pen.png">
+          <div class="services__column">   
+            <div class="services__title">
+              <h3>Custom Design</h3>
+            </div>
+            <div class="services__text">
+                Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
+                laoreet, viverra lacus ut, ultrices velit.
+              </div>
+            </div>
+            </div>
+
+            <div class="services__item">
+              <img class="services__image" src="assets/bulb.png">
+              <div class="services__column">   
+              <div class="services__title">
+                <h3>Inovative Ideas</h3>
+              </div>
+              <div class="services__text">           
+                  Quisque luctus, quam eget molestie commodo, 
+                  lacus purus cursus purus, nec rutrum tellus dolor id lorem.
                 </div>
+              </div>
+            </div>
+
+            <div class="services__item">
+              <img class="services__image" src="assets/heart.png">   
+              <div class="services__column">
+              <div class="services__title">
+                <h3>Love Is The Answer</h3>
+              </div>
+              <div class="services__text">
+                  Nulla sed nunc et tortor luctus faucibus.
+                  Morbi at aliquet turpis,
+                  et consequat felis. Quisque condimentum.
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="services services__bottom"></div>
-    </section>
+          
+            <div class="services__inner">
+              <div class="services__item">
+              <img class="services__image" src="assets/phone.png">
+              <div class="services__column">   
+                <div class="services__title">
+                  <h3>Responsive Layout</h3>
+                </div>
+                <div class="services__text">
+                  Sed porttitor placerat rhoncus. 
+                  In at nunc tellus. Maecenas blandit nunc ligula.
+                  Praesent elit leo.
+                  </div>
+                </div>
+                </div>
     
+                <div class="services__item">
+                  <img class="services__image" src="assets/bubble.png">
+                  <div class="services__column">   
+                  <div class="services__title">
+                    <h3>24 / 7 Support</h3>
+                  </div>
+                  <div class="services__text">           
+                    Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi.
+                    Nulla a sem erat. 
+                    Pellentesque egestas venenatis lorem .
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="services__item">
+                  <img class="services__image" src="assets/star.png">   
+                  <div class="services__column">
+                  <div class="services__title">
+                    <h3>Feal Like A Star</h3>
+                  </div>
+                  <div class="services__text">
+                    Quisque hendrerit purus dapibus, ornare nibh vitae,
+                    viverra nibh. 
+                    Fusce vitae aliquam tellus.
+                  </div>
+                  </div>
+                </div>
+    </section>
+
+    <div class="services__bottom"></div>
+  </div>
   </body>
 </html>
