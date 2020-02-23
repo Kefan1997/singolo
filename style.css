@@ -25,10 +25,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end; 
-  
-  /* height: 20px; */
 }
-/* !!!!!!! To do later */
+
 .singolo {
   font-size: 25px;
   line-height: 6px;
@@ -114,21 +112,15 @@ a:hover {
   
 }
 
-/* .chev {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;  
-  margin: -310px -3px;
-} */
 
-.chev-left {
+.chev_left {
   background-image: url("assets/chev-left.jpg");
   display: inline-block;
   width: 16px;
   height: 27px;
 }
 
-.chev-right {
+.chev_right {
   background-image: url("assets/chev-right.jpg");
   display: inline-block;
   height: 27px;
