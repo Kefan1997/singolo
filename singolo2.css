@@ -1,0 +1,243 @@
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Lato Black"), local("Lato-Black"),
+    url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh50XSwiPGQ.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Lato Bold"), local("Lato-Bold"),
+    url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPGQ.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXg.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Lato Light"), local("Lato-Light"),
+    url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPGQ.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+body {
+  font-family: "Lato", Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/*! Portfolio */
+
+.portfolio {
+  height: 864px;
+  background-color: #2d303a;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio__title {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+  padding-top: 69px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.text__portfolio {
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-weight: 300;
+  padding-top: 28px;
+}
+
+/* ! Buttons */
+.btn__group {
+  display: flex;
+  margin-top: 11px;
+  padding-left: 1px;
+}
+
+.button-portfolio {
+  text-decoration: none;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #2d303a;
+  border: 1px solid #666d89;
+  font-size: 11px;
+  line-height: 20px;
+  color: #767e9e;
+  font-weight: 400;
+  letter-spacing: 0.27px;
+  cursor: pointer;
+}
+
+.button-portfolio_item {
+  padding: 0 7px;
+  margin-right: 10px;
+}
+
+.button-portfolio-item_active,
+.button-portfolio:hover {
+  color: #dedede;
+  border: 1px solid #c5c5c5;
+}
+
+/* ! Gallery */
+
+.gallery__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery__column {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.gallery__img {
+  margin-top: 20px;
+}
+
+/* ! Portfolio Bottom */
+
+.portfolio__bottom {
+  width: 1020px;
+  height: 6px;
+  background-color: #323746;
+}
+
+/* ! About Us  */
+
+.about-us {
+  width: 1020px;
+  height: 722px;
+  background-color: #f2f2f2;
+}
+
+.about-us__title {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+  padding-top: 68px;
+}
+
+.about-us__text {
+  width: 940px;
+  height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-weight: 300;
+  padding-top: 28px;
+  text-align: justify;
+}
+
+/*! About Us Img Face */
+
+.about-us__img {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ! Info three column  */
+
+.info__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.name {
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+  margin-top: 17px;
+  letter-spacing: -0.25px;
+}
+
+.name__info {
+  width: 300px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 21px;
+  color: #767e9e;
+  font-weight: 400;
+  letter-spacing: -0.075px;
+  margin-top: 11px;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.info__social-media {
+  margin-top: 25px;
+}
+
+.info__social-media_link {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* ! About Us Bottom */
+
+.about-us__bottom {
+  width: 1020px;
+  height: 6px;
+  background-color: #ffffff;
+}

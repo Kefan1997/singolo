@@ -19,7 +19,7 @@ body {
 .header {
   background-color: #2d303a;
   height: 89px;
-  align-items: center;
+ /* ?*/ align-items: center; 
 }
 
 .header__wrapper {
