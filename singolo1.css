@@ -141,7 +141,7 @@ li + li:before {
   align-items: center;
 }
 
-.iPone-Vertical {
+.iPhone-Vertical {
   display: inline-block;
   background: url("assets/phone-vertical.jpg");
   width: 240px;
