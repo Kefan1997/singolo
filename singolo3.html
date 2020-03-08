@@ -20,36 +20,42 @@
           </p>
           <div class="all-info">
             <!--! Form -->
-            <form action="#" method="post">
-              <label for="full-name"></label>
-              <input
-                type="text"
-                name="full-name"
-                id="full-name"
-                placeholder="Name (Required)" required
-              /><br />
-              <label for="email"></label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email (Required)" required
-              /><br />
-              <label for="subject"></label>
-              <input
-                type="text"
-                name="subject"
-                id="subject"
-                placeholder="Subject"
-              /><br />
-              <textarea
-                name="massage"
-                id="message"
-                placeholder="Describe your project in detail..."
-              ></textarea
-              ><br />
-              <input type="submit" value="Submit" />
-            </form>
+            <div class="get-a-quote__form">
+              <form action="#" method="post">
+                <input
+                  class="get-a-quote__form_name"
+                  type="text"
+                  name="full-name"
+                  id="full-name"
+                  placeholder="Name (Required)"
+                  required
+                />
+                <input
+                  class="get-a-quote__form_email"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email (Required)"
+                  required
+                />
+                <input
+                  class="get-a-quote__form_subject"
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="Subject"
+                />
+                <textarea
+                  class="get-a-quote__form_message"
+                  name="message"
+                  cols="40"
+                  rows="8"
+                  id="message"
+                  placeholder="Describe your project in detail..."
+                ></textarea>
+                <input class="form_button" type="submit" value="Submit" />
+              </form>
+            </div>
             <!--! Contact Information -->
             <div class="Contact-Information">
               <h2 class="Contact-Information__title">Contact Information</h2>
