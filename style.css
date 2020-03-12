@@ -116,7 +116,7 @@ li {
   color: #f06c64;
 }
 
-li:hover {
+.singolo_link:hover {
   color: #f06c64;
 }
 
@@ -175,6 +175,11 @@ li + li:before {
   width: 16px;
 }
 
+.chev_left:hover,
+.chev_right:hover {
+  background-color: #dedede;
+}
+
 .slider__bottom {
   background-color: #ea676b;
   height: 6px;
@@ -208,6 +213,8 @@ li + li:before {
   font-weight: 300;
   text-align: justify;
   margin-bottom: 47px;
+  height: 57px;
+  overflow: hidden;
 }
 
 .services__title {
@@ -227,7 +234,7 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 30.7px;
+  margin-bottom: 36.7px;
 }
 
 .services__text {
@@ -238,6 +245,7 @@ h3 {
   font-weight: 400;
   text-align: justify;
   overflow: hidden;
+  height: 60px;
 }
 
 .services__item {
@@ -336,12 +344,12 @@ p {
   padding-bottom: 49px;
   overflow: hidden;
   margin-top: 20px;
+  height: 570px;
 }
 
 .box__image {
   padding-bottom: 20px;
 }
-
 
 /* ! Portfolio Bottom */
 
@@ -376,6 +384,7 @@ p {
   font-weight: 300;
   padding-top: 28px;
   text-align: justify;
+  overflow: hidden;
 }
 
 /*! About Us Img Face */
@@ -429,6 +438,10 @@ h2 {
   cursor: pointer;
 }
 
+.about-us_info__social-media_link:hover {
+  background-color: #d6564f;
+}
+
 /* ! About Us Bottom */
 
 .about-us__bottom {
@@ -468,10 +481,11 @@ p {
   color: #f0d8d9;
   font-weight: 300;
   padding-top: 27px;
-  padding-bottom: 44px;
+  padding-bottom: 84px;
   text-align: justify;
+  overflow: hidden;
+  height: 20px;
 }
-
 
 .all-info {
   display: flex;
@@ -547,7 +561,7 @@ h2 {
   color: #f0d8d9;
   font-weight: 400;
   text-align: justify;
-  padding-bottom: 23px;
+  padding-bottom: 19px;
   letter-spacing: -0.09px;
 }
 
@@ -609,4 +623,8 @@ footer {
 .info__social-media_link {
   margin-left: 5px;
   cursor: pointer;
+}
+
+.info__social-media_link:hover {
+  background-color: #d6564f;
 }
