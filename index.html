@@ -7,35 +7,64 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
          <!--? Singolo1  -->
-        <header class="header">
+
+        <header class="header" id="header">
           <div class="wrapper">
-          <div class="header__wrapper">
+          <nav class="header__wrapper">
             <h1 class="singolo">Singolo<span style="color:#f06c64;">*</span></h1>
-              <ul id= "menu">
-                <li><a href="#" class="singolo_link active">Home</a></li>
-                <li><a href="#" class="singolo_link">Services</a></li>
-                <li><a href="#" class="singolo_link">Portfolio</a></li>
-                <li><a href="#" class="singolo_link">About</a></li>
-                <li><a href="#" class="singolo_link">Contact</a></li>
+            <nav class="header-navigation">
+              <ul class ="menu" id= "menu">
+                <li><a href="#carousel"  class="singolo_link nav_active">Home</a></li>
+                <li><a href="#services" class="singolo_link">Services</a></li>
+                <li><a href="#portfolio" class="singolo_link">Portfolio</a></li>
+                <li><a href="#about-us" class="singolo_link">About</a></li>
+                <li><a href="#contact" class="singolo_link">Contact</a></li>
               </ul>
+            </nav>
           </div>
           </div>
+
         </header>
     
-        <div class=" header__bottom"></div>
+
+        <!-- ! Slider  -->
     
-        <main class="slider">
-          
-            <a href="#"><div class="chev_left"></div></a>
-            <div class="iPhone-Vertical"></div>
-            <div class="iPhone-Horizontal"></div>
-            <a href="#"><div class="chev_right"></div></a>
-        </main>
-        <div class="slider__bottom"></div>
+        <main class="carousel" id='carousel'>
+
+          <div class="wrapper">
+
+          <div class="slider-container">
+
+            <div class="arrows">
+              <div class='left'><a href="#"><div class="chev_left"></div></a></div>
+              <div class="right"><a href="#"><div class="chev_right"></div></a></div>
+            </div>
+
+        <div class="sliders active">
+            <div class="Vertical-iPhone">
+              <img class="iPhone_Vertical" src="assets/phone-vertical.jpg">
+              <div class="home-button"></div>
+              <div class="black-screen_vertical" hidden='true'></div>
+            </div>
+
+            <div class="Horizontal-iPhone">
+              <img class="iPhone_Horizontal" src="assets/phone-horizontal.jpg" >
+              <div class="home-button"></div>
+              <div class="black-screen_horizontal" hidden='true'></div>
+            </div>
+        </div>
+
+        <div class="sliders">
+          <img class="nextSlider slider2" src="assets/Slider2.png" >
+        </div>
+
+    </div>
+  </div>
+</main>
+
     
-        <section class="services">
+        <section class="services" id="services">
           <div class="wrapper">
             <h2 class="our-services">Our Services</h2>
             <p class="text_our-services">
@@ -128,11 +157,11 @@
                       </div>
                       </div>
                     </div>
+                    </div>
         </section>
     
-        <div class="services__bottom"></div>
         <!--! Portfolio -->
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="wrapper">
           <h1 class="portfolio__title">Portfolio</h1>
           <p class="text__portfolio">
@@ -140,8 +169,7 @@
             eget lacinia odio sem nec elit.
           </p>
           <!--! Buttons -->
-          <div class="btn__group">
-            <!-- <img src="assets/All.png" alt="All"> -->
+          <div class="btn__group" id="portfolio-buttons">
             <button class="button-portfolio button-portfolio_item button-portfolio-item_active"  alt="All">All</button>
             <button class="button-portfolio button-portfolio_item " alt="Web Design">Web Design</button>
             <button class="button-portfolio button-portfolio_item " alt="Graphic Design">Graphic Design</button>
@@ -149,7 +177,7 @@
           </div>
           <!--! Gallery -->
           <!--! New -->
-          <div class="gallery">
+          <div class="gallery" id="gallery">
             <img class="box__image" src="assets/Image1.png" />
             <img class="box__image" src="assets/Image4.png" />
             <img class="box__image" src="assets/Image7.png" />
@@ -165,10 +193,8 @@
         </div>
         </div>
       </section>
-      <!--! Portfolio Bottom -->
-      <div class="portfolio__bottom"></div>
       <!--! About Us -->
-      <div class="about-us">
+      <div class="about-us" id="about-us">
         <div class="wrapper">
           <h1 class="about-us__title">About Us</h1>
           <p class="about-us__text">
@@ -231,10 +257,9 @@
           </div>
         </div>
       </div>
-      <!--! About Us Bottom -->
-      <div class="about-us__bottom"></div>
+
       <!--! Get a Quote -->
-      <div class="get-a-quote">
+      <div class="get-a-quote" id="contact">
         <div class="wrapper">
           <h1 class="get-a-quote__title">Get a Quote</h1>
           <p class="text__get-a-quote">
@@ -316,8 +341,6 @@
           </div>
         </div>
       </div>
-      <!--! Get a Quote bottom -->
-      <div class="get-a-quote__bottom"></div>
       <!--! Footer -->
 
       <footer>
@@ -333,6 +356,7 @@
           </div>
         </div>
       </footer>
-      </div>
+
+      <script src = "script.js"></script>
 </body>
 </html>
