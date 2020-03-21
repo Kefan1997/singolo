@@ -1,5 +1,4 @@
 const MENU = document.getElementById("menu");
-const PORTFOLIO_BUTTONS = document.getElementById("btn__group");
 
 // ! Menu
 
@@ -94,73 +93,80 @@ document.querySelector('.arrows .right').addEventListener('click', function(){
   }
 });
 
-// PORTFOLIO_BUTTONS.addEventListener("click", event => {
-//   PORTFOLIO_BUTTONS.querySelectorAll("button").forEach(el =>
-//     el.classList.remove("button-portfolio-item_active")
-//   );
-//   if (event.target.textContent == "All") {
-//     gallery.innerHTML = `<img class="box__image" src="assets/Image1.png" />
-//         <img class="box__image" src="assets/Image4.png" />
-//         <img class="box__image" src="assets/Image7.png" />
-//         <img class="box__image" src="assets/Image10.png" />
-//         <img class="box__image" src="assets/Image2.png" />
-//         <img class="box__image" src="assets/Image5.png" />
-//         <img class="box__image" src="assets/Image8.png" />
-//         <img class="box__image" src="assets/Image11.png" />
-//         <img class="box__image" src="assets/Image3.png" />
-//         <img class="box__image" src="assets/Image6.png" />
-//         <img class="box__image" src="assets/Image9.png" />
-//         <img class="box__image" src="assets/Image12.png" />`;
-//   } else if (event.target.textContent == "Web Design") {
-//     gallery.innerHTML = `<img class="box__image" src="assets/Image12.png" />
-//         <img class="box__image" src="assets/Image2.png" />
-//         <img class="box__image" src="assets/Image3.png" />
-//         <img class="box__image" src="assets/Image4.png" />
-//         <img class="box__image" src="assets/Image5.png" />
-//         <img class="box__image" src="assets/Image6.png" />
-//         <img class="box__image" src="assets/Image7.png" />
-//         <img class="box__image" src="assets/Image8.png" />
-//         <img class="box__image" src="assets/Image9.png" />
-//         <img class="box__image" src="assets/Image10.png" />
-//         <img class="box__image" src="assets/Image11.png" />
-//         <img class="box__image" src="assets/Image11.png" />`;
-//   } else if (event.target.textContent == "Graphic Design") {
-//     gallery.innerHTML = `<img class="box__image" src="assets/Image11.png" />
-//         <img class="box__image" src="assets/Image12.png" />
-//         <img class="box__image" src="assets/Image4.png" />
-//         <img class="box__image" src="assets/Image3.png" />
-//         <img class="box__image" src="assets/Image6.png" />
-//         <img class="box__image" src="assets/Image5.png" />
-//         <img class="box__image" src="assets/Image8.png" />
-//         <img class="box__image" src="assets/Image7.png" />
-//         <img class="box__image" src="assets/Image10.png" />
-//         <img class="box__image" src="assets/Image1.png" />
-//         <img class="box__image" src="assets/Image2.png" />
-//         <img class="box__image" src="assets/Image9.png" />`;
-//   } else if (event.target.textContent == "Artwork") {
-//     gallery.innerHTML = `<img class="box__image" src="assets/Image6.png" />
-//         <img class="box__image" src="assets/Image5.png" />
-//         <img class="box__image" src="assets/Image3.png" />
-//         <img class="box__image" src="assets/Image1.png" />
-//         <img class="box__image" src="assets/Image2.png" />
-//         <img class="box__image" src="assets/Image8.png" />
-//         <img class="box__image" src="assets/Image9.png" />
-//         <img class="box__image" src="assets/Image10.png" />
-//         <img class="box__image" src="assets/Image7.png" />
-//         <img class="box__image" src="assets/Image6.png" />
-//         <img class="box__image" src="assets/Image4.png" />
-//         <img class="box__image" src="assets/Image11.png" />`;
-//   }
-//   event.target.classList.add("button-portfolio-item_active");
-// });
+//? Black Screen
 
-document.getElementById("gallery").addEventListener("click", activeImage);
+const ButtonIphone = document.querySelectorAll(".home-button");
+ButtonIphone.forEach(button =>
+  button.addEventListener("click", function(event) {
+    let verticalPhone = document.querySelector(".Vertical-iPhone");
+    let verticalBlackScreen = document.querySelector(
+      ".Vertical-iPhone .black-screen_vertical"
+    );
 
-function activeImage(event) {
-  if (event.target.parentElement.classList.contains("gallery")) {
-    this.querySelectorAll(".box__image").forEach(element => {
-      element.classList.remove("active");
+    let horizontalPhone = document.querySelector(".Horizontal-iPhone");
+    let horizontalBlackScreen = document.querySelector(
+      ".Horizontal-iPhone .black-screen_horizontal"
+    );
+
+    if (verticalPhone.contains(button))
+      verticalBlackScreen.hidden = !verticalBlackScreen.hidden;
+    if (horizontalPhone.contains(button))
+      horizontalBlackScreen.hidden = !horizontalBlackScreen.hidden;
+  })
+);
+
+//! Portfolio !!!!!
+
+const Portfolio = document.querySelector(".btn__group");
+
+Portfolio.addEventListener("click", event => {
+  Portfolio.querySelectorAll("button").forEach(Element =>
+    Element.classList.remove("button_active")
+  );
+  event.target.classList.add("button_active");
+
+  document
+    .querySelector(".box")
+    .querySelectorAll(".box__image")
+    .forEach(element => {
+      element.style.order = Math.floor(1 + Math.random() * 12);
     });
-    event.target.classList.add("active");
-  }
-}
+});
+
+//? Border Image !!!!
+
+const Box = document.getElementById("gallery");
+
+Box.addEventListener("click", event => {
+  Box.querySelectorAll(".box__image").forEach(element =>
+    element.classList.remove("selected")
+  );
+  event.target.classList.add("selected");
+});
+
+//!! Form !!!!
+const closeButton = document.getElementById("close-button");
+const formBlock = document.getElementById("form");
+const subject = document.getElementById("subject");
+const textarea = document.getElementById("textarea");
+const message = document.getElementById("message");
+
+formBlock.addEventListener("submit", event => {
+  event.preventDefault();
+  document.getElementById("message-block").classList.remove("hidden");
+
+  message.querySelector("#subj_result").textContent = subject.value
+    ? `Subject: ${subject.value}`
+    : "No subject";
+  message.querySelector("#description_result").textContent = textarea.value
+    ? `Description: ${textarea.value}`
+    : "No description";
+});
+
+closeButton.addEventListener("click", () => {
+  document.getElementById("message-block").classList.add("hidden");
+  textarea.value = "";
+  subject.value = "";
+  formBlock.reset();
+});
+

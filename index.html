@@ -27,6 +27,22 @@
 
         </header>
     
+        
+        <div id="message-block" class="hidden">
+          <div id="message">
+            <div class="modal_block">
+            </br>
+            <p id="p_message">The letter was sent!</p>
+            </br>
+            <p id="p_subj"><span id="subj_result"></span></p>
+            </br>
+            <p id="p_textarea"><span id="description_result"></span></p>
+            </br>
+            </div>
+            <button id="close-button">OK</button>
+        </div>
+        
+      </div>
 
         <!-- ! Slider  -->
     
@@ -169,15 +185,15 @@
             eget lacinia odio sem nec elit.
           </p>
           <!--! Buttons -->
-          <div class="btn__group" id="portfolio-buttons">
-            <button class="button-portfolio button-portfolio_item button-portfolio-item_active"  alt="All">All</button>
+          <div class="btn__group">
+            <button class="button-portfolio button-portfolio_item button_active"  alt="All">All</button>
             <button class="button-portfolio button-portfolio_item " alt="Web Design">Web Design</button>
             <button class="button-portfolio button-portfolio_item " alt="Graphic Design">Graphic Design</button>
             <button class="button-portfolio button-portfolio_item " alt="Artwork">Artwork</button>
           </div>
           <!--! Gallery -->
           <!--! New -->
-          <div class="gallery" id="gallery">
+          <div class="box" id="gallery">
             <img class="box__image" src="assets/Image1.png" />
             <img class="box__image" src="assets/Image4.png" />
             <img class="box__image" src="assets/Image7.png" />
@@ -271,7 +287,7 @@
           <div class="all-info">
             <!--! Form -->
             <div class="get-a-quote__form">
-              <form action="#" method="post">
+              <form id='form' action="#" method="post">
                 <input
                   class="get-a-quote__form_name"
                   type="text"
@@ -300,7 +316,7 @@
                   name="message"
                   cols="40"
                   rows="8"
-                  id="message"
+                  id="textarea"
                   placeholder="Describe your project in detail..."
                 ></textarea>
                 <input class="form_button" type="submit" value="Submit" />

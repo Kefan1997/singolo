@@ -410,6 +410,7 @@ p {
   display: flex;
   margin-top: 11px;
   padding-left: 1px;
+  padding-bottom: 17px;
 }
 
 .button-portfolio {
@@ -431,13 +432,14 @@ p {
   margin-right: 10px;
 }
 
-.button-portfolio-item_active,
+.button_active,
 .button-portfolio:hover {
   color: #dedede;
   border: 1px solid #c5c5c5;
+  outline: none;
 }
 
-.gallery img.active {
+.box__image.selected {
   /* box-sizing: border-box;
   border: 5px solid #F06C64; */
   outline: 5px solid #f06c64;
@@ -447,18 +449,21 @@ p {
 /* ! Gallery */
 /* !new */
 
-.gallery {
+.box {
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 49px;
+  margin-bottom: 49px;
   overflow: hidden;
-  margin-top: 20px;
-  height: 570px;
+  /* margin-top: 20px; */
+  height: 621px;
 }
 
 .box__image {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  width: 220px;
+  height: 187px;
 }
 
 /* ! About Us  */
@@ -717,4 +722,70 @@ footer {
 
 .info__social-media_link:hover {
   background-color: #d6564f;
+}
+
+/*!! Message Block !!*/
+
+#message-block {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  background: #45426436;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+#message-block.hidden {
+  display: none;
+}
+
+.modal_block {
+  max-width: 600px;
+  max-height: 250px;
+  overflow: auto;
+}
+
+#message {
+  position: fixed;
+  top: 25%;
+  margin: 0 auto;
+  width: 600px;
+  height: 300px;
+  border: 2px solid #d6564f;
+  border-radius: 10px;
+  background-color: #f06c64;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+#p_message {
+  font-size: large;
+  color: #e64848;
+  font-weight: 900;
+}
+
+#subj_result,
+#description_result {
+  overflow: hidden;
+  max-width: 200px;
+  max-height: 100px;
+  color: #f0d8d9;
+}
+
+#close-button {
+  font-size: 20px;
+  font-weight: 400;
+  color: #f48c8f;
+  text-shadow: 0 -1px #0000001a;
+  text-decoration: none;
+  user-select: none;
+  padding: 3px 45px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #d6564f linear-gradient(#ce413a, #e44d4581);
+  box-shadow: inset #d6564f 0 -1px 1px, inset 0 1px 1px #ce413a,
+    #e44d4581 0 0 0 1px, #4e02024d 0 2px 5px;
 }
