@@ -2,6 +2,11 @@ const MENU = document.getElementById("menu");
 
 // ! Menu
 
+header.addEventListener("click", event => {
+  header.querySelector("header__burger").forEach(el => el.classList.add("active"));
+  event.target.classList.remove("active");
+});
+
 MENU.addEventListener("click", event => {
   MENU.querySelectorAll("a").forEach(el => el.classList.remove("nav_active"));
   event.target.classList.add("nav_active");
