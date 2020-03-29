@@ -476,13 +476,13 @@ li + li:before {
     left: 37vw;
   }
   .Horizontal-iPhone .home-button {
-    top: 28vw;
-    left: 42vw;
+    top: 25.6vw;
+    left: 37.3vw;
     z-index: 1;
   }
   .black-screen_horizontal {
-    top: 14vw;
-    left: 54.5vw;
+    top: 12vw;
+    left: 49.7vw;
     height: 33vw;
     width: 19vw;
   }
@@ -512,13 +512,15 @@ li + li:before {
     left: 18px;
   }
   .Vertical-iPhone .home-button {
-    top: 46vw;
-    left: 17vw;
+    top: 45vw;
+    left: 12.5vw;
     z-index: 1;
+    width: 5vw;
+    height: 5vw;
   }
   .black-screen_vertical {
-    top: 13vw;
-    left: 10.5vw;
+    top: 11.5vw;
+    left: 5.9vw;
     height: 33vw;
     width: 19vw;
   }
@@ -530,13 +532,15 @@ li + li:before {
     left: 35vw;
   }
   .Horizontal-iPhone .home-button {
-    top: 28vw;
-    left: 37vw;
+    top: 26vw;
+    left: 35.5vw;
     z-index: 1;
+    width: 5vw;
+    height: 5vw;
   }
   .black-screen_horizontal {
-    top: 14vw;
-    left: 49.6vw;
+    top: 12vw;
+    left: 47.6vw;
     height: 33vw;
     width: 19vw;
   }
