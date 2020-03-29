@@ -2,9 +2,11 @@ const MENU = document.getElementById("menu");
 
 // ! Menu
 
-header.addEventListener("click", event => {
-  header.querySelector("header__burger").forEach(el => el.classList.add("active"));
-  event.target.classList.remove("active");
+document.querySelector(".header__burger").addEventListener("click", event => {
+  document.querySelector(".header__burger").classList.toggle("target");
+  document.querySelector(".header-navigation").classList.toggle("target");
+  document.querySelector("body").classList.toggle("lock");
+  document.querySelector(".singolo").classList.toggle("target");
 });
 
 MENU.addEventListener("click", event => {
